@@ -1,0 +1,6 @@
+K 15
+bugraq:logregex
+V 91
+(?:closes|fixes|addresses|references|refs|re)?(#[0-9]+(?:(?:[, &]+| *and *)#[0-9]+)*)
+(\d+)
+END

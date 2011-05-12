@@ -1,0 +1,21 @@
+K 7
+bugtraq
+V 46
+http:://svn.skipscreen.com/trac/ticket/%BUGID%
+K 13
+bugtraq:label
+V 9
+Ticket #:
+K 15
+bugtraq:message
+V 15
+Ticket #%BUGID%
+K 14
+bugtraq:number
+V 4
+true
+K 11
+bugtraq:url
+V 45
+http://svn.skipscreen.com/trac/ticket/%BUGID%
+END

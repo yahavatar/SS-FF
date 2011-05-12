@@ -1,0 +1,10 @@
+K 15
+bugraq:logregex
+V 91
+(?:closes|fixes|addresses|references|refs|re)?(#[0-9]+(?:(?:[, &]+| *and *)#[0-9]+)*)
+(\d+)
+K 13
+svn:mime-type
+V 24
+application/octet-stream
+END

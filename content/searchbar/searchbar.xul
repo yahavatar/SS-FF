@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://skipscreen/content/searchbar/searchbar.css" type="text/css"?>
+
+<overlay id="script-compiler-overlay" xmlns='http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul'>
+
+	<script type='application/x-javascript' src='chrome://skipscreen/content/searchbar/searchbar.js'></script>
+	<script type='application/x-javascript' src='chrome://skipscreen/content/searchbar/searchbar-init.js'></script>
+
+	<toolbox id="navigator-toolbox">
+		<toolbar id="searchbar-toolbar"
+			toolbarname="SkipScreen Search Toolbar"
+			customizable="false"
+			context="toolbar-context-menu"
+			>
+
+				<div class="skipscreen">
+					<div class="wrapper_left">
+						<div class="skipscreen_search" >
+							<div class="search_wrapper">
+								<div class="search-border">
+									<textbox id="searchbar-bingsearch-textbox"
+										class="skipscreen_search_input"
+										editable="true"
+										clickSelectsAll="true"
+										autocompletesearch="bingsuggest"
+										onkeypress="if(event.keyCode == 13){bingsearch(this.value);}"
+										value="Web Search"
+									/>
+									 <toolbarbutton class="skipscreen_icon"
+									 	image="chrome://skipscreen/content/searchbar/glass.png"
+									 	oncommand="bingsearch();"
+										tooltiptext="Bing Search"
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<spacer
+					class="spacer"
+					flex="8"
+				/>
+				<div class="skipscreen">
+					<div class="wrapper_right">
+						<div class="skipscreen_search skipscreen_websearch">
+							<div class="search_wrapper">
+								<div class="websearch_text">
+									<label value="SkipScreen Search" />
+								</div>
+								<div class="search-border">
+									<textbox id="searchbar-skipscreensearch-textbox"
+										class="skipscreen_search_input"
+										editable="true"
+										clickSelectsAll="true"
+										autocompletesearch="skipscreensuggest"
+										onkeypress="if(event.keyCode == 13){skipscreensearch(this.value);}"
+										value="Music, Videos, Files"
+									/>
+									 <toolbarbutton class="skipscreen_icon"
+									 	image="chrome://skipscreen/content/searchbar/glass.png"
+									 	oncommand="skipscreensearch();"
+										tooltiptext="SkipScreen Search"
+									/>
+								</div>
+								<div class="skipscreen_settings">
+									 <toolbarbutton class="button_skipscreen_settings"
+									 	image="chrome://skipscreen/content/searchbar/skipscreen_settings.png"
+									 	oncommand="SkipScreenOverlay.optionMenu();"
+										tooltiptext="SkipScreen Settings"
+									 />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+	    </toolbar>
+	</toolbox>
+
+</overlay>

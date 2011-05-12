@@ -1,0 +1,25 @@
+a,.text-link {
+        color: #333333;
+}
+a:hover,.text-link:hover {
+        color: #663300;
+}
+
+#chkHome
+{
+	display:none;
+}
+
+.boxcenter
+{
+	padding:10px;
+	display:block;
+	text-align:center;
+}
+
+.zugoWindow
+{
+	background-color:#d9d9d9;
+	height:400px;
+	display:block;
+}

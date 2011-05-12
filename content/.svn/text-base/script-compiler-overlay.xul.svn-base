@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<overlay id="script-compiler-overlay" xmlns='http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul'>
+  <script type='application/x-javascript' src='chrome://skipscreen/content/xmlhttprequester.js'></script>
+  <script type='application/x-javascript' src='chrome://skipscreen/content/prefman.js'></script>
+  <script type='application/x-javascript' src='chrome://skipscreen/content/script-compiler.js'></script>
+  <script type='application/x-javascript' src='chrome://skipscreen/content/auxillary.js'></script>
+
+  <popup id="menu_ToolsPopup">
+    <menu id="SkipScreen_tools_menu"
+	  label="SkipScreen"
+	  tooltiptext="SkipScreen"
+	  insertbefore="javascriptConsole">
+
+      <menupopup id="SkipScreen_tools_menu_menupopup">
+
+	<menuitem id="SkipScreen_tools_menu_options"
+		  label="Options"
+		  tooltiptext="SkipScreen Options"
+		  oncommand="SkipScreenOverlay.optionMenu();"/>
+
+	<menuitem id="SkipScreen_tools_menu_about"
+		  label="About"
+		  tooltiptext="SkipScreen About"
+		  oncommand="SkipScreenOverlay.aboutMenu();"/>
+
+      </menupopup>
+
+    </menu>
+  </popup>
+
+</overlay>

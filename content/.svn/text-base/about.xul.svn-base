@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<!DOCTYPE dialog SYSTEM "chrome://SkipScreen/locale/about.dtd">
+<dialog title="&about; SkipScreen"
+	orient="vertical"
+	onload="sizeToContent()"
+	width="330"
+	buttons="accept"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <!-- Original template by Jed Brown -->
+  <groupbox align="center" orient="horizontal" width="1" flex="1">
+
+    <vbox>
+      <div>
+	<image id="logo" src="chrome://SkipScreen/content/icon32.png" width="32px" height="32px" class="text-link" tooltiptext="Visit Extension Home Page" onclick="window.open('http://www.skipscreen.com')"/>
+	<text value="SkipScreen" style="font-weight: bold; font-size: x-large;"/>
+      </div>
+
+      <text value="&version; 0.5.20ba"/>
+      <separator class="thin"/>
+
+      <columns>
+	<column width="300">
+	  <description id="extensionDescription">Skips unnecessary pages on sites like Rapidshare, Megaupload, zShare, Mediafire, and more.  Wherever there are unnecessary pages and superfluous links, Skipscreen will be there. ;-)</description>
+	</column>
+      </columns>
+
+      <separator class="thin"/>
+      <text value="&createdBy;" style="font-weight: bold;"/>
+      <columns>
+	<column width="300">
+	  <description class="contributor"
+		       onclick="window.open('http://www.xradiograph.com/');">
+	  Michael Paulukonis (http://www.xradiograph.com)</description>
+	  <description class="contributor"
+		       onclick="window.open('http://yahavatar.com/');">
+	  Yah Avatar (http://yahavatar.com)</description>
+	  <description class="contributor"
+		       onclick="window.open('http://www.benbeadle.com/');">
+	  Ben Beadle (http://www.benbeadle.com)</description>
+	  <description class="contributor"
+		       onclick="window.open('http://worcesterllc.com/');">
+	  Worcester, LLC (http://worcesterllc.com)</description>
+	  <description class="contributor">
+	  Ahmed Ismail</description>
+	  <description class="contributor"
+		       onclick="window.open('http://arantius.com/');">
+	  Greasemonkey Compiler by Anthony Lieuallen (http://arantius.com/)</description>
+	</column>
+      </columns>
+
+      <separator class="thin"/>
+      <text value="&homepage;" style="font-weight: bold;"/>
+      <text value="http://www.skipscreen.com"
+            class="url"
+            onclick="window.open('http://www.skipscreen.com');"/>
+
+      <separator class="thin"/>
+      <text value="&support;" style="font-weight: bold;"/>
+      <text value="http://getsatisfaction.com/skipscreen"
+            class="url"
+            onclick="window.open('http://getsatisfaction.com/skipscreen');"/>
+
+      <separator class="thin"/>
+      <text value="&whatsnew;" style="font-weight: bold;"/>
+      <text value="http://www.skipscreen.com/install/whatsnew_beta.html"
+            class="url"
+            onclick="window.open('http://www.skipscreen.com/install/whatsnew_beta.html');"/>
+
+      <separator class="thin"/>
+      <text value="&blog;" style="font-weight: bold;"/>
+      <text value="http://www.skipscreen.com/blog"
+            class="url"
+            onclick="window.open('http://www.skipscreen.com/blog');"/>
+
+      <separator class="thin"/>
+      <text value="&donate;" style="font-weight: bold;"/>
+      <text value="Click to help keep SkipScreen growing!"
+            class="url"
+            onclick="window.open('http://skipscreen.com/blog/2009/05/can-you-make-a-donation-to-support-work-on-skipscreen/');"/>
+
+      <separator class="thin"/>
+      <text value="&amo;" style="font-weight: bold;"/>
+      <text value="https://addons.mozilla.org/en-US/firefox/addon/11243"
+            class="url"
+            onclick="window.open('https://addons.mozilla.org/en-US/firefox/addon/11243');"/>
+
+      <separator class="thin"/>
+
+    </vbox>
+  </groupbox>
+</dialog>

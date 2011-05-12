@@ -1,0 +1,10 @@
+content	SkipScreen	content/
+skin SkipScreen classic/1.0 skin/
+locale	SkipScreen	en-US	locale/en-US/
+overlay	chrome://browser/content/browser.xul	chrome://skipscreen/content/auxilliary.xul
+overlay	chrome://browser/content/browser.xul	chrome://skipscreen/content/script-compiler-overlay.xul
+# begin smartlinks
+overlay	chrome://browser/content/browser.xul	chrome://skipscreen/content/smartlinks/smartlinks.xul
+# end smartlinks
+# begin searchbar
+# end searchbar

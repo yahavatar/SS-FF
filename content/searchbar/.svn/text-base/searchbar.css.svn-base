@@ -1,0 +1,89 @@
+.skipscreen {
+    font-family: verdana;
+    background: #cecece;
+    color: #7f7f7f;
+    padding-left: 20px;
+    height: 34px;
+    background: url('chrome://skipscreen/content/searchbar/skipscreen_bg.png');
+}
+
+/** position the boxes with floats **/
+
+.wrapper_left {
+	-moz-appearance: none;
+    float: left;
+}
+
+.wrapper_right {
+	-moz-appearance: none;
+    float: right;
+}
+
+.skipscreen_settings {
+	-moz-appearance: none;
+    float: right;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 6px;
+}
+
+/** generic form styling for both left & right search **/
+
+.skipscreen_search {
+	-moz-appearance: none;
+    height: 30px;
+}
+
+.skipscreen_search_input {
+	-moz-appearance: none;
+    color: #7f7f7f;
+    border: 0px solid #fff;
+    background: none;
+    height: 22px;
+    padding-left: 10px;
+    width: 172px;
+}
+
+.skipscreen_icon {
+	-moz-appearance: none;
+    padding: 2px;
+    margin: 0px;
+    vertical-align: top;
+    margin-top: 1px;
+    margin-right: 1px;
+    float: right;
+}
+
+.search_wrapper {
+	-moz-appearance: none;
+	padding-top: 2px
+}
+
+/** text for the right side search **/
+
+.websearch_text {
+	-moz-appearance: none;
+    float: left;
+    color: #007b24;
+    font-size: 12px;
+    padding-top: 5px;
+    position: relative;
+    font-weight: bold;
+}
+
+.skipscreen_websearch {
+	-moz-appearance: none;
+    float: right;
+}
+
+.search-border {
+	border: 1px solid #ccc;
+	background: url('chrome://skipscreen/content/searchbar/search_input_bg.png');
+}
+.spacer {
+	background: url('chrome://skipscreen/content/searchbar/skipscreen_bg.png');
+}
+
+.button_skipscreen_settings {
+	-moz-appearance: none;
+}

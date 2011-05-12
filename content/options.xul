@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://SkipScreen/skin/prefwindow.css" type="text/css"?>
+<!DOCTYPE prefwindow SYSTEM "chrome://SkipScreen/locale/prefwindow.dtd">
+
+<prefwindow id="skipscreenPreferences"
+            onload="sizeToContent()"
+            xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+            title="&prefwindow.title;"
+            >
+
+  <prefpane id="pane1"
+            onload="sizeToContent()"
+            label="&pane1.title;"
+            style="overflow:auto"
+            >
+
+    <tabbox>
+      <tabs>
+        <tab label="&skipperstab.label;" />
+        <tab label="&othertab.label;" />
+      </tabs>
+
+      <tabpanels>
+        <tabpanel id="skippers" style="overflow:auto" >
+
+          <preferences>
+            <preference id="depositfilesactive"         name="extensions.skipscreen.depositfilesactive"         type="bool"/>
+            <preference id="diggactive"                 name="extensions.skipscreen.diggactive"                 type="bool"/>
+            <preference id="divshareactive"             name="extensions.skipscreen.divshareactive"             type="bool"/>
+            <preference id="filesonicactive"            name="extensions.skipscreen.filesonicactive"            type="bool"/>
+            <preference id="filestube_multi_active"     name="extensions.skipscreen.filestube_multi_active"     type="bool"/>
+            <preference id="filestubeactive"            name="extensions.skipscreen.filestubeactive"            type="bool"/>
+            <preference id="fourshared_audio_active"    name="extensions.skipscreen.fourshared_audio_active"    type="bool"/>
+            <preference id="fourshared_dir_active"      name="extensions.skipscreen.fourshared_dir_active"      type="bool"/>
+            <preference id="foursharedactive"           name="extensions.skipscreen.foursharedactive"           type="bool"/>
+            <preference id="hotfileactive"              name="extensions.skipscreen.hotfileactive"              type="bool"/>
+            <preference id="letitbitactive"             name="extensions.skipscreen.letitbitactive"             type="bool"/>
+            <preference id="limelinxactive"             name="extensions.skipscreen.limelinxactive"             type="bool"/>
+            <preference id="link-protectoractive"       name="extensions.skipscreen.link-protectoractive"       type="bool"/>
+            <preference id="linkbucksactive"            name="extensions.skipscreen.linkbucksactive"            type="bool"/>
+            <preference id="lixactive"                  name="extensions.skipscreen.lixactive"                  type="bool"/>
+            <preference id="mediafireactive"            name="extensions.skipscreen.mediafireactive"            type="bool"/>
+			<preference id="mediafire_multi_active"     name="extensions.skipscreen.mediafire_multi_active"     type="bool"/>
+            <preference id="megauploadactive"           name="extensions.skipscreen.megauploadactive"           type="bool"/>
+			<preference id="multiuploadactive"          name="extensions.skipscreen.multiuploadactive"          type="bool"/>
+            <preference id="rapidshareactive"           name="extensions.skipscreen.rapidshareactive"           type="bool"/>
+			<preference id="remixshareactive"           name="extensions.skipscreen.remixshareactive"           type="bool"/>
+			<preference id="remixshare_multi_active"    name="extensions.skipscreen.remixshare_multi_active"    type="bool"/>
+            <preference id="sendspaceactive"            name="extensions.skipscreen.sendspaceactive"            type="bool"/>
+            <preference id="sharebeeactive"             name="extensions.skipscreen.sharebeeactive"             type="bool"/>
+            <preference id="storageactive"              name="extensions.skipscreen.storageactive"              type="bool"/>
+            <preference id="uploadedactive"             name="extensions.skipscreen.uploadedactive"             type="bool"/>
+            <preference id="uploadingactive"            name="extensions.skipscreen.uploadingactive"            type="bool"/>
+            <preference id="zshare_audio_active"        name="extensions.skipscreen.zshare_audio_active"        type="bool"/>
+            <preference id="zshareactive"               name="extensions.skipscreen.zshareactive"               type="bool"/>
+            <preference id="sharescreenactive"          name="extensions.skipscreen.sharescreenactive"          type="bool"/>
+            <preference id="errordisplay"               name="extensions.skipscreen.errordisplay"               type="bool"/>
+
+            <!--            <preference id="easyshareactive" name="extensions.skipscreen.easy-shareactive" type="bool"/> -->
+            <!--            <preference id="netloadactive" name="extensions.skipscreen.netloadactive" type="bool"/> -->
+
+          </preferences>
+
+          <groupbox class="ia-indent"
+                    onload="sizeToContent()"
+                    style="overflow:auto"
+                    height="460px"
+                    >
+
+            <label class="header" value="Turn Skippers on/off" />
+
+	    <!--             <checkbox id="easysharepref" preference="easyshareactive" label="&easysharepref.label;" /> -->
+            <checkbox id="depositfilespref"				preference="depositfilesactive"		label="&depositfilespref.label;" />
+            <checkbox id="diggpref"					preference="diggactive"                 label="&diggpref.label;" />
+            <checkbox id="divsharepref"					preference="divshareactive"             label="&divsharepref.label;" />
+            <checkbox id="filesonicpref"				preference="filesonicactive"		label="&filesonicpref.label;" />
+            <checkbox id="filestubepref"				preference="filestubeactive"            label="&filestubepref.label;" />
+            <checkbox id="filestube_multi_pref" class="sub-pref"        preference="filestube_multi_active"     label="&filestube_multi_pref.label;" />
+            <checkbox id="foursharedpref"				preference="foursharedactive"           label="&foursharedpref.label;" />
+            <checkbox id="fourshared_audio_pref" class="sub-pref"       preference="fourshared_audio_active"    label="&fourshared_audio_pref.label;" />
+            <checkbox id="fourshared_dir_pref" class="sub-pref"         preference="fourshared_dir_active"      label="&fourshared_dir_pref.label;" />
+            <checkbox id="hotfilepref"					preference="hotfileactive"		label="&hotfilepref.label;" />
+	    	<checkbox id="letitbitpref"					preference="letitbitactive"		label="&letitbitpref.label;" />
+            <checkbox id="limelinxpref"					preference="limelinxactive"		label="&limelinxpref.label;" />
+            <checkbox id="link-protectorpref"				preference="link-protectoractive"	label="&link-protectorpref.label;" />
+            <checkbox id="linkbuckspref"				preference="linkbucksactive"		label="&linkbuckspref.label;" />
+            <checkbox id="lixpref"					preference="lixactive"			label="&lixpref.label;" />
+            <checkbox id="mediafirepref"			preference="mediafireactive"		label="&mediafirepref.label;" />
+			<checkbox id="mediafire_multi_pref"	class="sub-pref"	preference="mediafire_multi_active"	label="&mediafire_multi_pref.label;" />
+            <checkbox id="megauploadpref"				preference="megauploadactive"		label="&megauploadpref.label;" />
+			<checkbox id="multiuploadpref" preference="multiuploadactive" label="&multiuploadpref.label;" />
+            <checkbox id="rapidsharepref"				preference="rapidshareactive"		label="&rapidsharepref.label;" />
+			<checkbox id="remixsharepref"	preference="remixshareactive"	label="&remixsharepref.label;" />
+			<checkbox id="remixshare_multi_pref" class="sub-pref"	preference="remixshare_multi_active"	label="&remixshare_multi_pref.label;" />
+            <checkbox id="sendspacepref"				preference="sendspaceactive"		label="&sendspacepref.label;" />
+            <checkbox id="sharebeepref"					preference="sharebeeactive"		label="&sharebeepref.label;" />
+            <checkbox id="storagepref"					preference="storageactive"		label="&storagepref.label;" />
+            <checkbox id="uploadedpref"					preference="uploadedactive"		label="&uploadedpref.label;" />
+            <checkbox id="uploadingpref"				preference="uploadingactive"		label="&uploadingpref.label;" />
+            <checkbox id="zsharepref"					preference="zshareactive"		label="&zsharepref.label;" />
+            <checkbox id="zshare_audio_pref" class="sub-pref"		preference="zshare_audio_active"	label="&zshare_audio_pref.label;" />
+            <!-- <checkbox id="netloadpref" preference="netloadactive" label="&netloadpref.label;" /> -->
+
+
+          </groupbox>
+
+        </tabpanel>
+
+        <tabpanel id="other">
+
+          <groupbox class="ia=indent">
+
+            <checkbox id="sharescreenpref" preference="sharescreenactive" label="&sharescreenpref.label;" />
+            <checkbox id="errordisplay" preference="errordisplay" label="&errordisplay.label;" />
+
+          </groupbox>
+
+        </tabpanel>
+      </tabpanels>
+    </tabbox>
+
+  </prefpane>
+
+</prefwindow>

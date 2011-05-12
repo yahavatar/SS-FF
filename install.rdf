@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>SkipScreen@SkipScreen</em:id>
+    <em:name>SkipScreen</em:name>
+    <em:version>0.5.20ba</em:version>
+    <em:description>Skips unnecessary pages on sites like Rapidshare, Megaupload, zShare, Mediafire, and more.
+    Wherever there are unnecessary pages and superfluous links, Skipscreen will be there.</em:description>
+    <em:creator>http://skipscreen.com/</em:creator>
+
+    <em:contributor>Michael Paulukonis (http://www.xradiograph.com/)</em:contributor>
+    <em:contributor>Ben Beadle (http://www.benbeadle.com/)</em:contributor>
+    <em:contributor>Worcester, LLC (http://worcesterllc.com/)</em:contributor>
+    <em:contributor>Greasemonkey Compiler by Anthony Lieuallen (http://arantius.com/)</em:contributor>
+
+    <em:iconURL>chrome://SkipScreen/content/icon32.png</em:iconURL>
+    <em:aboutURL>chrome://SkipScreen/content/about.xul</em:aboutURL>
+    <em:optionsURL>chrome://SkipScreen/content/options.xul</em:optionsURL>
+
+    <em:homepageURL>http://skipscreen.com/</em:homepageURL>
+
+    <!--update-->
+    <!--/update-->
+
+    <!-- FireFox -->
+    <em:targetApplication>
+      <Description>
+	<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+	<em:minVersion>3.0</em:minVersion>
+	<em:maxVersion>4.8</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+
+    <!-- Conkeror -->
+    <em:targetApplication>
+      <Description>
+	<em:id>{a79fe89b-6662-4ff4-8e88-09950ad4dfde}</em:id>
+	<em:minVersion>0.1</em:minVersion>
+	<em:maxVersion>9.9</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+
+  </Description>
+</RDF>

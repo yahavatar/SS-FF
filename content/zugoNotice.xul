@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://skipscreen/skin/zugoNotice.css" type="text/css"?>
+
+<window xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        xmlns:html="http://www.w3.org/1999/xhtml"                
+        id="notice_window"
+        orient="vertical"
+        title="Start Page Disclosure" 
+        persist="width height screenX screenY"
+        resizable="0"
+        width="503px"
+        height="400px"
+        windowtype="add:eulaWindow"
+        buttons="accept" 
+        >
+
+  <vbox class="zugoWindow">
+
+    <hbox>
+      <image src='chrome://skipscreen/skin/zugoDisclosure.png'/>
+    </hbox>
+
+    <checkbox label="Change my default start page to " checked="true" id="chkHome"/>
+
+    <hbox class="boxcenter">
+      <button label="Accept" accesskey="a" oncommand="zugoNotice.accept();"></button>
+      <button label="Decline" accesskey="d" oncommand="zugoNotice.decline();" id="decline" ></button>
+    </hbox>
+
+    <hbox class="boxcenter">
+      <label class="text-link" id="zugoTerms" value="Terms and Conditions" onclick="zugoNotice.showTerms();"/>
+    </hbox>
+
+  </vbox>
+
+<script>        
+        
+    netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+    var zTools = Components.classes['@zugo.com/ZugoTools;1'].getService().wrappedJSObject;    
+        
+        var zugoNotice =
+        {
+                accept : function()
+                {
+                        if (document.getElementById("chkHome").checked)
+                        {
+                                zTools.setHomepage();
+                        }
+                        else
+                                zTools.noHomepage();
+                        window.close(); 
+                },
+                
+                decline : function()
+                {
+                        window.close();
+                },
+                
+                onLoad : function()
+                {
+                    window.setResizable(false); 
+                    var chkHome = document.getElementById("chkHome");    
+                    chkHome.label = chkHome.label + "\"" + zTools.zugoSPurl + "\"";                 
+                    var lblTerms = document.getElementById("zugoTerms");
+                    lblTerms.value = zTools.zugoSPname +" "+ lblTerms.value;
+                    document.getElementById("decline").focus();
+                },
+                
+                showTerms : function()
+                {
+                        var win = Components.classes['@mozilla.org/appshell/window-mediator;1']
+                                  .getService(Components.interfaces.nsIWindowMediator)
+                                      .getMostRecentWindow('navigator:browser');
+                    
+                    win.gBrowser.selectedTab = win.gBrowser.addTab(zTools.zugoTermsUrl);
+                    win.focus();
+
+                }               
+                
+        }
+
+        window.addEventListener("load", function(e) { zugoNotice.onLoad(); }, false);
+
+</script>
+
+</window>

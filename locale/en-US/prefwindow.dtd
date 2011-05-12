@@ -1,0 +1,44 @@
+<!ENTITY prefwindow.title "SkipScreen preferences">
+<!ENTITY pane1.title "SkipScreen Preferences">
+
+<!ENTITY skipperstab.label "Skippers">
+<!ENTITY othertab.label "Other">
+
+<!-- skippers -->
+<!ENTITY cnetdelaypref.label "Delay">
+<!ENTITY cnetpref.label "CNet Download.com">
+<!ENTITY depositfilespref.label "DepositFiles">
+<!ENTITY diggpref.label "Digg">
+<!ENTITY divsharepref.label "DivShare">
+<!ENTITY easysharepref.label "EasyShare">
+<!ENTITY filestubepref.label "FilesTube">
+<!ENTITY filestube_multi_pref.label "Auto-download multi-part">
+<!ENTITY filesonicpref.label "FileSonic.com">
+<!ENTITY fourshared_audio_pref.label "skip 4Shared audio Preview">
+<!ENTITY fourshared_dir_pref.label "Auto-download directories">
+<!ENTITY foursharedpref.label "4Shared.com">
+<!ENTITY hotfilepref.label "HotFile">
+<!ENTITY letitbitpref.label "Letitbit">
+<!ENTITY limelinxpref.label "LimeLinx">
+<!ENTITY link-protectorpref.label "Link-Protector">
+<!ENTITY linkbuckspref.label "Linkbucks">
+<!ENTITY lixpref.label "Lix.in">
+<!ENTITY mediafirepref.label "Mediafire">
+<!ENTITY mediafire_multi_pref.label "Auto-download multi-part">
+<!ENTITY megauploadpref.label "MegaUpload Family">
+<!ENTITY multiuploadpref.label "Multiupload">
+<!ENTITY netloadpref.label "NetLoad.com">
+<!ENTITY rapidsharepref.label "RapidShare">
+<!ENTITY remixsharepref.label "remiXshare">
+<!ENTITY remixshare_multi_pref.label "Auto-download multi-part">
+<!ENTITY sendspacepref.label "SendSpace">
+<!ENTITY sharebeepref.label "ShareBee">
+<!ENTITY storagepref.label "Storage.to">
+<!ENTITY uploadedpref.label "Uploaded.to">
+<!ENTITY uploadingpref.label "Uploading.com">
+<!ENTITY zshare_audio_pref.label "skip zShare Audio Preview">
+<!ENTITY zsharepref.label "zShare">
+<!-- Other -->
+<!ENTITY searchrefinementspref.label "Search Refinements">
+<!ENTITY sharescreenpref.label "Post-download Page">
+<!ENTITY errordisplay.label "Display error messages">
